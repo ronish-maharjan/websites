@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 10vh;
+  background: #000;
+  color: #fff;
+  padding: 2em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.header__logo {
+  width: 40px;
+  border-radius: 3px;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 1em;
+}
+.header-btn {
+  font: inherit;
+  padding: 0.4em 1.4em;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 7px;
+  transition: box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #000;
+  border: 2px solid gray;
+}
+.signin-btn {
+  background-color: #4c5fd5;
+  border: 2px solid #4c5fd5;
+}
+
+.submit-btn:hover {
+  box-shadow: 0px 2px 8px gray;
+}
+
+.signin-btn:hover {
+  box-shadow: 0px 2px 10px 2px #4c5fd5;
+}
+
+.submit-btn:active {
+  background-color: rgb(51, 47, 47);
+}
+
+.signin-btn:active {
+  background-color: #5a6ce2;
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 4em;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+@media (min-width: 1284px) {
+}
+
+@media (min-width: 1536px) {
+}

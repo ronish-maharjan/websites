@@ -1,0 +1,53 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* All varaibles */
+:root {
+  --clr-accent: #00b280;
+  --clr-primary: #fff;
+  --clr-dark: #4c4d5f;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* 4. Add accessible line-height */
+  font-family: inter;
+  color: var(--clr-dark);
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container {
+  max-width: 80vw;
+  margin-inline: auto;
+}

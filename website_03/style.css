@@ -1,0 +1,42 @@
+/* ------------------------------------- */
+/* RESETS */
+/* ------------------------------------- */
+
+/* Variables */
+:root {
+  /* For Colors */
+  --clr-gray-200: hsl(0, 5%, 80%);
+  --clr-light: hsl(0, 100%, 100%);
+}
+/* Global Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting Up Body */
+body {
+  font-family: "inter", "Courier New", Courier, monospace;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Setting Up List & Anchor */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+/* Making Images Easier to Work With */
+img {
+  display: block;
+  width: 100%;
+}

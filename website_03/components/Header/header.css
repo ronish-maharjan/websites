@@ -1,0 +1,163 @@
+/* For the mobile view */
+
+.header {
+  display: flex;
+  gap: 0.8rem;
+  padding: 1em;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-gray-200);
+}
+
+/* Making the space between the icons and the logo */
+.header__logo {
+  margin-right: auto;
+}
+
+/* Making the search and cart image smaller */
+.cart,
+.search {
+  width: 30px;
+  height: 30px;
+}
+
+/* Centering the search image visually */
+.search__link {
+  margin-bottom: -4px;
+}
+
+/* ----------------------------------- */
+/*  Navigation Links & Hamgurger Section*/
+/* ----------------------------------- */
+
+/* When the hamburger is inactive */
+.nav__list {
+  display: none;
+}
+
+/* When hamburger is active */
+.nav.active {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  padding: 1.4em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  background-color: var(--clr-light);
+  box-shadow: 2px 0 10px hsl(0, 8%, 70%);
+}
+
+.nav.active .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* For HamBurger Menu */
+
+/* Making the hamburger container align at end when nav is active */
+.nav.active .hammenu__container {
+  align-self: flex-end;
+}
+
+.hammenu {
+  position: relative;
+  width: 30px;
+  height: 3px; /* middle line */
+  background: black;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hammenu::before,
+.hammenu::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: black;
+  transition: transform 0.3s, top 0.3s, bottom 0.3s, opacity 0.3s;
+}
+
+/* top line */
+.hammenu::before {
+  top: -8px;
+}
+
+/* bottom line */
+.hammenu::after {
+  top: 8px;
+}
+
+/* when menu is active → turn into "X" */
+.hammenu.active {
+  background: transparent; /* hide middle line */
+}
+
+.hammenu.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hammenu.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* For the desc section inside nav */
+.nav__desc {
+  display: none;
+  color: hsl(0, 8%, 70%);
+}
+.nav.active .nav__desc {
+  display: initial;
+}
+@media (min-width: 375px) {
+}
+/* Base nav (hidden) */
+.nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%; /* start fully off-screen left */
+  width: 60%; /* adjust width */
+  background-color: var(--clr-light);
+  box-shadow: 2px 0 10px hsl(0, 8%, 70%);
+  display: flex;
+  flex-direction: column;
+  padding: 1.4em;
+  opacity: 0; /* hidden */
+  transition: left 0.3s ease, opacity 0.3s ease; /* smooth slide & fade */
+  z-index: 10;
+}
+
+/* Active nav (visible) */
+.nav.active {
+  left: 0; /* slide into view */
+  opacity: 1; /* fade in */
+}
+
+/* Nav list styling */
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Nav description */
+.nav__desc {
+  display: none;
+  color: hsl(0, 8%, 70%);
+  margin-top: 1rem;
+}
+
+.nav.active .nav__desc {
+  display: block;
+}

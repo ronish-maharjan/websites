@@ -1,0 +1,133 @@
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 150px;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+  position: relative;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+nav > ul > li {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
+nav .nav__buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__buttons > button {
+  padding: 0.4em 1.4em;
+  border-radius: 4px;
+  font-weight: 500;
+  outline-color: lightgray;
+  outline-offset: 4px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.nav__login-btn {
+  border: 1px solid var(--clr-accent);
+  color: var(--clr-accent);
+  background-color: var(--clr-primary);
+}
+
+.nav__login-btn:hover {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.nav__start-btn {
+  border: 1px solid var(--clr-accent);
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.nav__start-btn:hover {
+  background-color: #0b936c;
+  color: var(--clr-primary);
+}
+
+/* for the drop down sections */
+.product__info {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: transform 0.2s ease-out;
+  box-shadow: 0 0 3px var(--clr-dark);
+}
+
+li:first-child:hover .product__info {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* for Bonsai section  */
+
+.section {
+  position: relative;
+  padding: 2em;
+  border-bottom: 1px solid lightblue;
+  transition: background-color 0.2s ease-out;
+}
+.section > h2 {
+  margin-bottom: 0.4em;
+}
+.arrow {
+  position: absolute;
+  color: red;
+  top: 50%;
+  left: 95%;
+  visibility: hidden;
+}
+.section:hover {
+  background-color: lightblue;
+}
+.section:hover .arrow {
+  visibility: visible;
+}
+.bonsai__info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  padding: 2em;
+  border: 1px solid blue;
+  visibility: hidden;
+}
+.section:hover .bonsai__info {
+  visibility: visible;
+}
+/* @media (min-width: 760px) {
+  .container {
+    padding: 0 2em;
+  }
+} */

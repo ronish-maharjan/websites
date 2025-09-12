@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <header>
+        <!-- Company Logo -->
+        <div class="header__logo">
+          <img src="public/logo.svg" class="logo" alt="Company Logo" />
+        </div>
+
+        <!-- Main navigation bar -->
+        <nav aria-label="Main Navigation">
+          <ul>
+            <!-- Product menu with dropdown -->
+            <li class="nav__item nav__item--product">
+              <a href="#" class="nav__link">Product</a>
+
+              <!-- Product dropdown info (appears on hover or click) -->
+              <div class="product__info">
+                <!-- First section: Bonsai Workflow -->
+                <section class="product__bonsai-section section">
+                  <h2>Bonsai Workflow</h2>
+                  <p>
+                    Look professional, win more clients and manage your business
+                    from one place.
+                  </p>
+                  <span class="arrow">></span>
+
+                  <!-- Nested info about Bonsai -->
+                  <div class="bonsai__info">
+                    <h2>More details here</h2>
+                  </div>
+                </section>
+
+                <!-- Second section: Bonsai Tax -->
+                <section class="section">
+                  <h2>Bonsai Tax</h2>
+                  <p>
+                    Track expenses, maximize tax write-offs, and estimate taxes
+                    without the headache.
+                  </p>
+                  <span class="arrow">></span>
+                </section>
+
+                <!-- Third section: Bonsai Cash -->
+                <section class="section">
+                  <h2>Bonsai Cash</h2>
+                  <p>
+                    Bonsai’s all-in-one financial hub: No fees and lightning
+                    fast payouts.
+                  </p>
+                  <span class="arrow">></span>
+                </section>
+              </div>
+            </li>
+
+            <!-- Other top-level nav items -->
+            <li><a href="#" class="nav__link">Templates</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Reviews</a></li>
+          </ul>
+
+          <!-- Authentication buttons -->
+          <div class="nav__buttons">
+            <button class="nav__login-btn">LOG IN</button>
+            <button class="nav__start-btn">START FREE</button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main content area -->
+      <main></main>
+
+      <!-- Footer area -->
+      <footer></footer>
+    </div>
+  </body>
+</html>

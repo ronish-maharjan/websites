@@ -1,3 +1,4 @@
 # :rocket: Website Links
 
-[Website 1](https://maharjanronish.github.io/websites/website_01/)
+[Website 1](https://ronish-maharjan.github.io/websites/)
+

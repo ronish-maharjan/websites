@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Bird Times</title>
+
+    <!-- Google fonts links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local Css links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/main/main.css" />
+    <link
+      rel="stylesheet"
+      href="./components/advertisement/advertisement.css"
+    />
+    <link rel="stylesheet" href="./components/opinion/opinion.css" />
+    <link rel="stylesheet" href="./utils.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <!-- Search action -->
+        <button class="search__btn" aria-label="Search" type="button">
+          <img src="./public/search.png" alt="" />
+        </button>
+
+        <!-- Hamburger button  -->
+        <button class="hamburger" aria-label="Menu" type="button">
+          <span class="hamburger__line"></span>
+        </button>
+
+        <!-- Account Action button -->
+        <button class="account__btn" aria-label="Search" type="button">
+          <img src="./public/account.png" alt="" />
+        </button>
+      </nav>
+
+      <!-- For Header Logo -->
+      <div class="logo__container">
+        <h1 class="logo">New Grid Times</h1>
+        <p class="published__date">Saturday, June 17th, 2021</p>
+      </div>
+    </header>
+
+    <main class="main grid container">
+      <!-- Main heading -->
+      <section class="main__article__section">
+        <article class="main__article article">
+          <header>
+            <img src="public/hero.png" alt="hero image" />
+            <h2>Study: Video games improve reflexes and critical thinking</h2>
+          </header>
+          <p>
+            SAN FRANCISCO — 24-year-old Anthony Vega enjoyed killing zombies,
+            but didn’t realize that those skills were preparing him for work in
+            the 21st century. It turns out, games like Super Mario Brothers and
+            Mega Zombie Bash 2099 have a surprising correlation with in-demand
+            skills like critical reasoning and abstract thinking. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quisquam obcaecati
+            dolorum deleniti sint ex a accusamus vel, voluptatibus adipisci
+            neque tempora ad! Exercitationem quia iure architecto fugiat
+            quisquam. Illo quidem aliquam officiis veritatis.
+          </p>
+          <a href="#">Continue Reading</a>
+        </article>
+      </section>
+
+      <!-- Mid section -->
+      <section class="mid__article__section">
+        <article class="mid__article article">
+          <header>
+            <img src="public/article1.png" alt="article 1" />
+          </header>
+          <div class="description">
+            <h3>Politicians scramble as court overrules invalid legislation</h3>
+            <p>
+              In a surprising judgment that surpri-sed no one, the New Amsterdam
+              court of appeals finds Bill 234
+            </p>
+          </div>
+        </article>
+        <article class="mid__article article">
+          <header>
+            <img src="public/article2.png" alt="article 1" />
+          </header>
+          <div class="description">
+            <h3>Vintage cars fetch a premium as car industry shifts gears</h3>
+            <p>
+              In a Landsdowne auction, a vintage 1900s beetle sold “as-is” for
+              ȿ120,000, shattering expectations and…
+            </p>
+          </div>
+        </article>
+        <article class="mid__article article">
+          <header>
+            <img src="public/article3.png" alt="article 1" />
+          </header>
+          <div class="description">
+            <h3>Vintage cars fetch a premium as car industry shifts gears</h3>
+            <p>
+              In a Landsdowne auction, a vintage 1900s beetle sold “as-is” for
+              ȿ120,000, shattering expectations and…
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Opininon Section -->
+      <section class="opinion__section">
+        <h2 class="opinion__title">Opinion</h2>
+        <div class="opinion__container">
+          <div class="opinion">
+            <img src="./public/person1.png" alt="related image" />
+            <div class="opinion__description">
+              <h4>Stephen Abebe</h4>
+              <p>Humans need water to survive, and so do your potted plants!</p>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./public/person2.png" alt="related image" />
+            <div class="opinion__description">
+              <h4>Stephen Abebe</h4>
+              <p>Humans need water to survive, and so do your potted plants!</p>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./public/person3.png" alt="related image" />
+            <div class="opinion__description">
+              <h4>Stephen Abebe</h4>
+              <p>Humans need water to survive, and so do your potted plants!</p>
+            </div>
+          </div>
+          <div class="opinion">
+            <img src="./public/person4.png" alt="related image" />
+            <div class="opinion__description">
+              <h4>Stephen Abebe</h4>
+              <p>Humans need water to survive, and so do your potted plants!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advertisement Section -->
+      <section class="advertisement__section">
+        <header>
+          <h4>— Advertisement —</h4>
+        </header>
+        <div class="advertisement"></div>
+      </section>
+    </main>
+    <footer style="background-color: black; color: white">copyright</footer>
+  </body>
+</html>

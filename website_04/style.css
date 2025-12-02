@@ -1,0 +1,37 @@
+/* Css Resets */
+:root {
+  /* For Colors */
+  --clr-gray-900: hsl(24, 6%, 16%);
+  --clr-gray-300: hsl(38, 8%, 80%);
+  --clr-gray-700: hsl(30, 5%, 40%);
+  --clr-light: hsl(0, 0%, 100%);
+  /* For Fonts */
+  --font-thin: 0.8rem;
+  --font-regular: 1rem;
+  --font-md: 2rem;
+  --font-lg: 4.5rem;
+  --font-scale: 5vh;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: "crimson pro";
+  color: var(--clr-gray-900);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  font: inherit;
+}

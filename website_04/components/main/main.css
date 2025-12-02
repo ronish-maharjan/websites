@@ -1,0 +1,91 @@
+/* ============================= */
+/* Global Article Styles */
+/* ============================= */
+.article h2,
+.article h3 {
+  hyphens: auto;
+}
+
+.article img {
+  border-radius: 4px;
+}
+
+/* ============================= */
+/* Main Article Section */
+/* ============================= */
+.main__article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main__article img {
+  margin-bottom: 0.5rem;
+}
+
+.main__article p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================= */
+/* Mid Article Section */
+/* ============================= */
+.mid__article {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--clr-gray-300);
+  margin-bottom: 1rem;
+}
+
+/* Remove border/margin from last mid article */
+.mid__article:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Header and Image */
+.mid__article > header {
+  flex: 0 0 120px;
+  min-height: 120px;
+}
+
+.mid__article > header > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Description text */
+.mid__article > .description > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ============================= */
+/* Responsive Adjustments */
+/* ============================= */
+@media (min-width: 48rem) {
+  .mid__article {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 64rem) {
+  .main__article__section {
+    grid-row: 1/3;
+  }
+  .mid__article__section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .mid__article {
+    flex-direction: row;
+  }
+}
